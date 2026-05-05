@@ -4,8 +4,6 @@
 #define led_green 7
 #define led_blue 4
 
-#define ascender digitalWrite
-
 int comb[][3] = {{0, 0, 0}, {1, 0, 0}, {0, 1, 0}, {0, 0, 1}, {1, 1, 0}, {1, 0, 1}, {0, 1, 1}, {1, 1, 1}};
 int row = sizeof(comb) / sizeof(comb[0]);
 
@@ -19,9 +17,9 @@ void setup() {
 
 void loop() {
   for (int i = 0; i < row; i++) {
-    ascender(led_red,   comb[i][0]);
-    ascender(led_green, comb[i][1]);
-    ascender(led_blue,  comb[i][2]);
+    digitalWrite(led_red,   comb[i][0]);
+    digitalWrite(led_green, comb[i][1]);
+    digitalWrite(led_blue,  comb[i][2]);
     delay(1000);
   }
 }
