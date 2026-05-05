@@ -31,6 +31,8 @@ void loop() {
 
 }
 
+// ================================== FUNÇÕES ==================================
+
 void onRed() {
   digitalWrite(led_red, HIGH);
   digitalWrite(led_green, LOW);
