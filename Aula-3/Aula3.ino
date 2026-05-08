@@ -9,7 +9,7 @@ const byte digitos[10][7] = {{1, 1, 1, 0, 1, 1, 1},
                							 {1, 1, 0, 0, 1, 0, 0},
               							 {1, 1, 1, 1, 1, 1, 1},
               							 {1, 1, 1, 1, 1, 1, 0}};
-    					            // {b, a, f, g, c, d, e}
+    					              // {b, a, f, g, c, d, e}
 
 void setup(){
   for(int pino = 13; pino >= 7; pino--){
