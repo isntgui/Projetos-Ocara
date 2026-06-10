@@ -6,8 +6,8 @@
 #define DHTTYPE DHT11
 #define LEDPIN 4       // pino do LED
 
-const char* ssid = "I4";
-const char* password = "I4emssocara@nov2023";
+const char* ssid = "I4"; // nome da rede
+const char* password = "I4emssocara@nov2023"; // senha da rede
 
 ESP8266WebServer server(80);
 DHT dht(DHTPIN, DHTTYPE);
